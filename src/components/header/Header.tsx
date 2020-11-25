@@ -2,35 +2,21 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import owlLogo from "./assets/owl_logo.svg"
+
+// Style
+import "./Header.scss"
+
 const Header = ({ siteTitle }) => {
   return (
-    <header
-      style={{
-        background: `rebeccapurple`,
-        marginBottom: `1.45rem`,
-      }}
-    >
-      <p>me</p>
-      <p>skills</p>
-      <p>projects</p>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
+    <header className="header__top">
+      <div className="header__top__logo">
+        <img src={owlLogo} alt="" />
+      </div>
+      <div className="header__top__nav">
+        <p>me</p>
+        <p>skills</p>
+        <p>projects</p>
       </div>
     </header>
   )

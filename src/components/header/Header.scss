@@ -1,0 +1,12 @@
+.header {
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: lightgray;
+
+    &__nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
