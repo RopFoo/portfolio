@@ -2,10 +2,19 @@
   &__top {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: lightgray;
+    padding: 0.5rem 2rem;
+    background-color: #050c29;
+
+    &__logo {
+      img {
+        width: 5rem;
+      }
+    }
 
     &__nav {
+      align-items: center;
       display: grid;
+      font-size: 1.2rem;
       grid-template-columns: repeat(3, 1fr);
     }
   }

@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import owlLogo from "./assets/owl_logo.svg"
+import owlLogo from "./assets/owl_logo_solo.svg"
 
 // Style
 import "./Header.scss"
