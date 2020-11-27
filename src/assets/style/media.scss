@@ -1,0 +1,28 @@
+// - Breakpoints -
+
+$breakpoint-large: 1600px;
+$breakpoint-medium: 1000px;
+$breakpoint-small: 750px;
+$breakpoint-mobile: 450px;
+$breakpoint-xmobile: 370px;
+$breakpoint-xsmall: 300px;
+
+// - Media Queries -
+
+@mixin media-xmobile {
+  @media (min-width: $breakpoint-xmobile) {
+    @content;
+  }
+}
+
+@mixin media-small {
+  @media (min-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin media-medium {
+  @media (min-width: $breakpoint-medium) {
+    @content;
+  }
+}

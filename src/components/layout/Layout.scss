@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import "../../assets/style/variables.scss";
+@import "../../assets/style/media.scss";
 
 * {
   padding: 0;
@@ -13,5 +14,26 @@ body {
 }
 
 main {
-  padding: 1rem;
+  padding: 0rem 1.25rem;
+  @include media-xmobile {
+    padding: 0rem 2rem;
+  }
+  @include media-small {
+    padding: 0rem 8rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: $special;
+  font-size: clamp(3rem, 3vw, 5rem);
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: clamp(1.5rem, 4vw, 2.75rem);
 }

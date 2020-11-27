@@ -4,8 +4,10 @@
     grid-template-columns: 1fr 1fr;
     padding: 0.5rem 2rem;
     background-color: #050c29;
-
+    height: 10vh;
     &__logo {
+      display: flex;
+      align-items: center;
       img {
         width: 5rem;
       }
