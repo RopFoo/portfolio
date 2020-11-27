@@ -18,13 +18,20 @@ main {
   @include media-xmobile {
     padding: 0rem 2rem;
   }
+  @include media-mobile {
+    padding: 0rem 5rem;
+  }
   @include media-small {
-    padding: 0rem 8rem;
+    padding: 0rem 3rem;
+  }
+  @include media-medium {
+    padding: 0rem 6rem;
   }
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -34,6 +41,6 @@ h1 {
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: clamp(1.5rem, 4vw, 2.75rem);
 }

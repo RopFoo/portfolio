@@ -3,7 +3,8 @@
 
 @mixin me-image($width) {
   width: $width;
-  clip-path: circle(calc(#{$width}/ 2.2) at center);
+  clip-path: circle(calc(#{$width}/ 2.2));
+  margin-left: -0.5rem;
 }
 
 .me-section {
@@ -49,7 +50,7 @@
       @include media-small {
         display: flex;
         flex-direction: column;
-        margin-top: 3rem;
+        // margin-top: 3rem;
       }
 
       &__link {
