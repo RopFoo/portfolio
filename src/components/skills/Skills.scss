@@ -1,0 +1,35 @@
+@import "../../assets/style/media.scss";
+
+.skills-section {
+  display: grid;
+  margin-top: 10vh;
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    @include media-small {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__element {
+    $width: 1rem;
+
+    @include media-small {
+      $width: 5rem;
+    }
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    img {
+      width: $width;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      width: $width;
+    }
+  }
+}
