@@ -2,16 +2,18 @@
 @import "../../assets/style/media.scss";
 
 @mixin me-image($width) {
-  width: $width;
   clip-path: circle(calc(#{$width}/ 2.2));
   margin-left: -0.5rem;
+  transition: 1s;
+  width: $width;
 }
 
 .me-section {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 85vh;
+  height: 80vh;
+  margin-top: 5vh;
 
   @include media-small {
     grid-template-columns: 1fr 1fr;
@@ -27,39 +29,56 @@
     @include media-small {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
 
     &__wrapper {
       display: flex;
     }
 
+    &__inner {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      @include media-small {
+        flex-direction: column;
+        width: auto;
+      }
+    }
+
     img {
       @include me-image(9rem);
-      @include media-xmobile {
+      @include media-xsmall {
         @include me-image(12rem);
       }
+      @include media-xmobile {
+        @include me-image(15rem);
+      }
       @include media-small {
-        @include me-image(20rem);
+        @include me-image(18rem);
       }
     }
 
     &__links-section {
       display: flex;
+      align-items: center;
       flex-direction: column;
+
       @include media-small {
+        justify-content: flex-start;
         display: flex;
         flex-direction: column;
-        // margin-top: 3rem;
+        width: auto;
+        margin-top: 1rem;
       }
 
       &__link {
         display: flex;
         align-items: center;
-        margin-bottom: 1.5rem;
+        margin: 1rem 0rem;
 
         img {
-          width: 1.3rem;
+          width: 1.8rem;
           margin-right: 0.9rem;
           @include media-small {
             width: 2.3rem;

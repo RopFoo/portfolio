@@ -36,11 +36,11 @@ a {
 
 h1 {
   color: $special;
-  font-size: clamp(3rem, 3vw, 5rem);
-  margin-bottom: 3rem;
+  font-size: clamp(4rem, 7vw, 7rem);
+  margin-bottom: clamp(4rem, 7vw, 7rem);
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  line-height: clamp(1.5rem, 4vw, 2.75rem);
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  line-height: clamp(1.5rem, 5vw, 2.55rem);
 }

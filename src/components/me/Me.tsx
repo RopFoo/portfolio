@@ -13,23 +13,25 @@ const MeSection: React.FC = () => {
     <div className="me-section">
       <div className="me-section__info__wrapper">
         <div className="me-section__info">
-          <img src={meIMG} alt="" />
-          <div className="me-section__info__links-section">
-            <SocialLink
-              img={githubSVG}
-              name="github"
-              link="https://github.com/RopFoo"
-            />
-            <SocialLink
-              img={linkedinSVG}
-              name="linkedin"
-              link="https://github.com/RopFoo"
-            />
-            <SocialLink
-              img={dribbbleSVG}
-              name="dribbble"
-              link="https://github.com/RopFoo"
-            />
+          <div className="me-section__info__inner">
+            <img src={meIMG} alt="" />
+            <div className="me-section__info__links-section">
+              <SocialLink
+                img={githubSVG}
+                name="github"
+                link="https://github.com/RopFoo"
+              />
+              <SocialLink
+                img={linkedinSVG}
+                name="linkedin"
+                link="https://www.linkedin.com/in/robert-pasdziernik/"
+              />
+              <SocialLink
+                img={dribbbleSVG}
+                name="dribbble"
+                link="https://dribbble.com/TheRop"
+              />
+            </div>
           </div>
         </div>
       </div>
