@@ -15,7 +15,7 @@
 
   &__element {
     $width: 1rem;
-
+    justify-content: center;
     @include media-small {
       $width: 5rem;
     }
