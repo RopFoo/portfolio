@@ -14,7 +14,9 @@ const MeSection: React.FC = () => {
       <div className="me-section__info__wrapper">
         <div className="me-section__info">
           <div className="me-section__info__inner">
-            <img src={meIMG} alt="" />
+            <div className="me-section__info__me-image">
+              <img src={meIMG} alt="" />
+            </div>
             <div className="me-section__info__links-section">
               <SocialLink
                 img={githubSVG}

@@ -7,13 +7,13 @@ import owlLogo from "./assets/owl_logo_solo.svg"
 // Style
 import "./Header.scss"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   return (
-    <header className="header__top">
-      <div className="header__top__logo">
+    <header className="header">
+      <div className="header__logo">
         <img src={owlLogo} alt="" />
       </div>
-      <div className="header__top__nav">
+      <div className="header__nav">
         <p>me</p>
         <p>skills</p>
         <p>projects</p>
