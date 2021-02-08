@@ -16,7 +16,7 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({
     if (!active) {
       setTimeout(() => {
         setDisplay(false)
-      }, 100)
+      }, 500)
     } else {
       setDisplay(true)
     }

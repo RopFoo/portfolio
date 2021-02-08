@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import {
   skillIconsDesign,
   skillIconsDev,
@@ -21,7 +21,7 @@ export const Carousel: React.FC<CarouselProps> = ({
   )
 
   const isLeft = (): boolean =>
-    activeIndex[activeIndex.length - 1] < activeIndex[activeIndex.length - 2]
+    activeIndex[activeIndex.length - 2] < activeIndex[activeIndex.length - 2]
 
   return (
     <div className="carousel">
