@@ -2,10 +2,12 @@
 @import "../../assets/style/media.scss";
 
 @mixin me-image($width) {
-  clip-path: circle(calc(#{$width}/ 2.2));
+  border-radius: 50%;
+  object-fit: cover;
   margin-left: -0.5rem;
   transition: 1s;
   width: $width;
+  height: $width;
 }
 
 .me-section {
@@ -13,7 +15,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   height: 80vh;
-  margin-top: 5vh;
+  margin-top: 20vh;
 
   @include media-small {
     grid-template-columns: 1fr 1fr;
@@ -25,6 +27,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 2rem;
 
     @include media-small {
       display: flex;
@@ -46,16 +49,20 @@
       }
     }
 
-    img {
-      @include me-image(9rem);
-      @include media-xsmall {
-        @include me-image(12rem);
-      }
-      @include media-xmobile {
-        @include me-image(15rem);
-      }
-      @include media-small {
-        @include me-image(18rem);
+    &__me-image {
+      display: flex;
+      justify-content: center;
+      img {
+        @include me-image(9rem);
+        @include media-xsmall {
+          @include me-image(12rem);
+        }
+        @include media-xmobile {
+          @include me-image(15rem);
+        }
+        @include media-small {
+          @include me-image(18rem);
+        }
       }
     }
 
@@ -91,8 +98,5 @@
         }
       }
     }
-  }
-
-  &__text {
   }
 }
