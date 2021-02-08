@@ -1,11 +1,12 @@
-import jsIcon from "./assets/js.svg"
-import gitIcon from "./assets/git.svg"
-import reactIcon from "./assets/react.svg"
-import vueIcon from "./assets/vue.svg"
-import sassIcon from "./assets/sass.svg"
-import ionicIcon from "./assets/ionic.svg"
-import flutterIcon from "./assets/flutter.svg"
-import dockerIcon from "./assets/docker.svg"
+// Dev Icons
+import jsIcon from "./assets/icons-dev/js.svg"
+import gitIcon from "./assets/icons-dev/git.svg"
+import reactIcon from "./assets/icons-dev/react.svg"
+import vueIcon from "./assets/icons-dev/vue.svg"
+import sassIcon from "./assets/icons-dev/sass.svg"
+import ionicIcon from "./assets/icons-dev/ionic.svg"
+import flutterIcon from "./assets/icons-dev/flutter.svg"
+import dockerIcon from "./assets/icons-dev/docker.svg"
 
 export interface SkillIconType {
   name: string
@@ -13,7 +14,7 @@ export interface SkillIconType {
   icon: any
 }
 
-export const skillIcons: SkillIconType[] = [
+export const skillIconsDev: SkillIconType[] = [
   {
     name: "js | ts",
     icon: jsIcon,
@@ -53,5 +54,13 @@ export const skillIcons: SkillIconType[] = [
     name: "git",
     icon: gitIcon,
     alt: "Git icon",
+  },
+]
+
+export const skillIconsDesign: SkillIconType[] = [
+  {
+    name: "js | ts",
+    icon: jsIcon,
+    alt: "JavaScript and TypeScript icon",
   },
 ]
