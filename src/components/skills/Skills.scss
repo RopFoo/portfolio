@@ -9,30 +9,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: clamp(2rem, 6vw, 4rem);
-
-    &__toggle {
-      display: flex;
-
-      button {
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin-left: 1rem;
-        line-height: 3rem;
-
-        @include media-small {
-          font-size: 1.5rem;
-          margin-left: 3rem;
-        }
-      }
-      &--on {
-        transition: 0.3s ease-in-out;
-        border-bottom: 0.4rem solid $highlight;
-      }
-      &--off {
-        transition: 0.3s ease-in-out;
-        border-bottom: 0.4rem solid rgba($color: #000000, $alpha: 0);
-      }
-    }
   }
 
   &__grid {
@@ -41,16 +17,6 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
     transition: 0.5s ease-in-out;
-
-    &--move-left {
-      transition: 0.5s ease-in-out;
-      transform: translateX(-100vw);
-    }
-
-    &--move-right {
-      transition: 0.5s ease-in-out;
-      transform: translateX(0);
-    }
 
     @include media-small {
       grid-template-columns: repeat(4, 1fr);

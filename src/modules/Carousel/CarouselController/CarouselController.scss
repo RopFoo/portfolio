@@ -1,0 +1,16 @@
+@import "../../../assets/style/variables.scss";
+.controller {
+  display: flex;
+  &__element {
+    margin-left: 2rem;
+    border-bottom: 0.3rem solid rgba($color: #000000, $alpha: 0);
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+    color: $link;
+    &__active {
+      transition: 0.3s ease-in-out;
+      border-bottom: 0.4rem solid $highlight;
+    }
+  }
+}

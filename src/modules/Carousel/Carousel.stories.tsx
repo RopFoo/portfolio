@@ -7,10 +7,11 @@ export default {
   componen: Carousel,
 } as Meta
 
-const Template: Story<CarouselProps> = (args: any) => <Carousel />
+const Template: Story<CarouselProps> = (args: any) => (
+  <Carousel navOptions={args.navOptions} />
+)
 
 export const Primary = Template.bind({})
 Primary.args = {
-  primary: true,
-  label: "Button",
+  navOptions: ["dev", "design"],
 }

@@ -1,0 +1,53 @@
+.carousel {
+  &__list {
+    position: relative;
+    width: 100%;
+  }
+
+  &__content {
+    width: 100%;
+    position: absolute;
+    display: grid;
+
+    height: 100%;
+    transition: 1s;
+
+    &__start-left {
+      animation: start-left 1s;
+    }
+
+    &__start-right {
+      animation: start-right 1s;
+    }
+
+    &__move-left {
+      transform: translateX(100vw);
+      transition: 1s;
+    }
+
+    &__move-right {
+      transform: translateX(-10vw);
+      transition: 1s;
+    }
+  }
+}
+
+@keyframes start-left {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes start-right {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
