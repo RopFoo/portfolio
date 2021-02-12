@@ -1,0 +1,17 @@
+.projects-section {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    &__element--large {
+      background: rgb(13, 10, 43);
+      border-radius: 1.5rem;
+      height: 50vh;
+    }
+    &__element--small {
+      background: rgb(13, 10, 43);
+      border-radius: 1.5rem;
+      height: 40vh;
+    }
+  }
+}
