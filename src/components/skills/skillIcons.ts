@@ -8,6 +8,10 @@ import ionicIcon from "./assets/icons-dev/ionic.svg"
 import flutterIcon from "./assets/icons-dev/flutter.svg"
 import dockerIcon from "./assets/icons-dev/docker.svg"
 
+// Design Icons
+import figmaIcon from "./assets/icons-design/figma.svg"
+import illustratorIcon from "./assets/icons-design/illustrator.svg"
+
 export interface SkillIconType {
   name: string
   alt: string
@@ -62,5 +66,15 @@ export const skillIconsDesign: SkillIconType[] = [
     name: "js | ts",
     icon: jsIcon,
     alt: "JavaScript and TypeScript icon",
+  },
+  {
+    name: "figma",
+    icon: figmaIcon,
+    alt: "Figma Icon",
+  },
+  {
+    name: "illustrator",
+    icon: illustratorIcon,
+    alt: "Illustrator Icon",
   },
 ]
