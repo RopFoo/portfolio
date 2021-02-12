@@ -3,12 +3,12 @@
 .skills-section {
   display: grid;
   margin: 10vh 0 0vh 0;
+  height: 80vh;
 
   &__header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: clamp(2rem, 6vw, 4rem);
   }
 
   &__grid {

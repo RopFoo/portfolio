@@ -38,7 +38,7 @@ const MeSection: React.FC = () => {
         </div>
       </div>
       <div className="me-section__text">
-        <h1>/hey</h1>
+        <h1 className="header-margin">/hey</h1>
         <p>
           I'm Robert, a guy from Berlin studying visual computing and design.
           I'm into graphic design, web development, 3d art and motion design.

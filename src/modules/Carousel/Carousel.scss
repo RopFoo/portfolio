@@ -1,3 +1,5 @@
+$animationSpeed: 0.5s;
+
 .carousel {
   &__list {
     position: relative;
@@ -10,24 +12,24 @@
     display: grid;
 
     height: 100%;
-    transition: 1s;
+    transition: $animationSpeed;
 
     &__start-left {
-      animation: start-left 1s;
+      animation: start-left $animationSpeed ease-in-out;
     }
 
     &__start-right {
-      animation: start-right 1s;
+      animation: start-right $animationSpeed ease-in-out;
     }
 
     &__move-left {
       transform: translateX(100vw);
-      transition: 1s;
+      transition: $animationSpeed ease-in-out;
     }
 
     &__move-right {
       transform: translateX(-100vw);
-      transition: 1s;
+      transition: $animationSpeed ease-in-out;
     }
   }
 }

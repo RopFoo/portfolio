@@ -21,11 +21,11 @@ export const Carousel: React.FC<CarouselProps> = ({
   )
 
   const isLeft = (): boolean =>
-    activeIndex[activeIndex.length - 2] < activeIndex[activeIndex.length - 2]
+    activeIndex[activeIndex.length] < activeIndex[activeIndex.length - 1]
 
   return (
     <div className="carousel">
-      <div className="skills-section__header">
+      <div className="skills-section__header header-margin">
         <h1>/skills</h1>
 
         <CarouselController

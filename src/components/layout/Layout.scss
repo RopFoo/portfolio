@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import "../../assets/style/variables.scss";
 @import "../../assets/style/media.scss";
+@import "../../assets/style//config.scss";
 
 * {
   box-sizing: border-box;
@@ -39,9 +40,7 @@ h1 {
   color: $special;
   $min: 3rem;
   $max: 5rem;
-  $width: 6vw;
-  font-size: clamp($min, $width, $max);
-  //   margin-bottom: clamp(2rem, $width, 4rem);
+  font-size: clamp($min, $scaleWidth, $max);
 }
 
 button {

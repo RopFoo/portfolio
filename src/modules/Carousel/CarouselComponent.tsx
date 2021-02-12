@@ -27,7 +27,7 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({
       {display && (
         <div
           className={`carousel__content ${
-            !moveLeft
+            moveLeft
               ? "carousel__content__start-left"
               : "carousel__content__start-right"
           } ${
