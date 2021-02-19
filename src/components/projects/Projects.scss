@@ -3,15 +3,55 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    &__element--large {
-      background: rgb(13, 10, 43);
-      border-radius: 1.5rem;
-      height: 50vh;
-    }
-    &__element--small {
-      background: rgb(13, 10, 43);
-      border-radius: 1.5rem;
-      height: 40vh;
+  }
+}
+
+.project-element {
+  $animSpeed: 0.3s;
+
+  background: rgb(36, 24, 78);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: $animSpeed ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: $animSpeed ease-in-out;
+    box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  $first: 0;
+  $last: 6;
+  @for $var from $first to $last {
+    &__#{$var} {
+      // Height
+      @if ($var == $first or $var % 3 == 0) {
+        height: 300px;
+      } @else {
+        height: 250px;
+      }
+      // Grid
+      @if ($var % 2 == 0) {
+        @if ($var == $first) {
+          grid-row: ($var + 1) / span ($var + 2);
+          grid-column: 1;
+        } @else {
+          grid-column: 1;
+          @if ($var > 2) {
+            grid-row: ($var);
+          } @else {
+            grid-row: ($var + 1);
+          }
+        }
+      } @else {
+        grid-column: 2;
+        @if ($var == 1) {
+          grid-row: ($var);
+        } @else {
+          grid-row: ($var - 1) / span ($var + 1);
+        }
+      }
     }
   }
 }
