@@ -37,19 +37,31 @@ $animationSpeed: 0.5s;
 @keyframes start-left {
   0% {
     transform: translateX(100vw);
+    filter: blur(0px);
+  }
+
+  50% {
+    filter: blur(2px);
   }
 
   100% {
     transform: translateX(0);
+    filter: blur(0px);
   }
 }
 
 @keyframes start-right {
   0% {
     transform: translateX(-100vw);
+    filter: blur(0px);
+  }
+
+  50% {
+    filter: blur(2px);
   }
 
   100% {
     transform: translateX(0);
+    filter: blur(0px);
   }
 }
