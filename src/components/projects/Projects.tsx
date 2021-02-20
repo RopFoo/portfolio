@@ -1,4 +1,5 @@
 import React from "react"
+import ProjectPreview from "./project-preview/ProjectPreview"
 
 import "./Projects.scss"
 
@@ -10,11 +11,7 @@ const ProjectsSection: React.FC = () => {
       <h1 className="header-margin">/projects</h1>
       <div className="projects-section__grid">
         {projects.map((project, index: number) => {
-          return (
-            <div className={`project-element project-element__${index}`}>
-              {index}
-            </div>
-          )
+          return <ProjectPreview index={index} name="test" />
         })}
       </div>
     </div>
