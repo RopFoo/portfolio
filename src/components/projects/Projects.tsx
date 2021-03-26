@@ -11,7 +11,7 @@ const ProjectsSection: React.FC = () => {
       <h1 className="header-margin">/projects</h1>
       <div className="projects-section__grid">
         {projects.map((project, index: number) => {
-          return <ProjectPreview index={index} name="test" />
+          return <ProjectPreview key={index} index={index} name="test" />
         })}
       </div>
     </div>
