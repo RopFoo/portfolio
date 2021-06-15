@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby"
-import { ProjectPreviewType } from "../models/Project.model"
+import { ProjectPreviewType, ProjectType } from "../models/Project.model"
 
 export function useProjectsPreviewQuery() {
   const { allStrapiProjects } = useStaticQuery(graphql`
@@ -8,6 +8,7 @@ export function useProjectsPreviewQuery() {
         nodes {
           title
           id
+          slug
         }
       }
     }
