@@ -7,6 +7,7 @@ import meIMG from "./assets/images/me.jpg"
 import githubSVG from "./assets/images/social/github.svg"
 import linkedinSVG from "./assets/images/social/linkedin.svg"
 import dribbbleSVG from "./assets/images/social/dribbble.svg"
+import { motion } from "framer-motion"
 
 const MeSection: React.FC = () => {
   return (
@@ -38,7 +39,16 @@ const MeSection: React.FC = () => {
         </div>
       </div>
       <div className="me-section__text">
-        <h1 className="header-margin">/hey</h1>
+        <motion.h1
+          animate={{
+            opacity: [0, 1, 1],
+            translateX: [-500, 100, 0],
+          }}
+          transition={{ duration: 1 }}
+          className="header-margin"
+        >
+          /hey
+        </motion.h1>
         <p>
           I'm Robert, a guy from Berlin studying visual computing and design.
           I'm into graphic design, web development, 3d art and motion design.
