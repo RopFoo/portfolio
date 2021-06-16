@@ -1,24 +1,32 @@
 @import "../../assets/style/media.scss";
 
 .header {
-  display: grid;
-  position: fixed;
-  grid-template-columns: 0.4fr 1fr;
-  padding: 0.5rem 2rem;
-  background-color: #050c29;
+  align-items: center;
+  display: flex;
   height: 10vh;
+  left: 0;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  justify-content: center;
   width: 100%;
   z-index: 1000;
-  top: 0;
-  left: 0;
 
-  @include media-xmobile {
-    grid-template-columns: 0.6fr 1fr;
-  }
+  &__wrapper {
+    background-color: #050c29;
+    border-radius: 0 0 1rem 1rem;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    width: 80%;
 
-  @include media-small {
-    grid-template-columns: 1fr 1fr;
-    padding: 0.5rem 10%;
+    @include media-xmobile {
+      grid-template-columns: 0.6fr 1fr;
+    }
+
+    @include media-small {
+      grid-template-columns: 1fr 1fr;
+      padding: 0.5rem 5%;
+    }
   }
 
   &__logo {
